@@ -2,9 +2,9 @@
 from PyNjoy import *
 import os
 jeff3p3 = PyNjoy()
-evaluationDir = os.getcwd() + "ENDF/JEFF-3.3/"
-jeff3p3.evaluationName = os.getcwd() + "output/JEFF-3.3/"
-jeff3p3.execDir = os.getcwd() + "PyNjoy2016/bld"
+evaluationDir = os.getcwd() + "/ENDF/JEFF-3.3/"
+jeff3p3.evaluationName = os.getcwd() + "/output/JEFF-3.3/"
+jeff3p3.execDir = "PyNjoy2016/bld"
 jeff3p3.nstr = 26
 jeff3p3.iwt = 4
 jeff3p3.Espectra = None
