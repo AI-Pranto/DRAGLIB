@@ -16,7 +16,7 @@ jeff3p3.mat = 125
 jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/1-H-1g.jeff33"
 jeff3p3.scatteringLaw =  evaluationDir + "JEFF33-tsl/tsl-HinH2O.jeff33"
 jeff3p3.scatteringMat = 1
-jeff3p3.temperatures = ( 293.6, 323.6, 373.6, 423.6, 473.6, 523.6, 573.6, 647.2, 800.0 )
+jeff3p3.temperatures = ( 293.6, 323.6, 373.6, 423.6, 473.6, 523.6, 573.6, 623.6, 647.2, 800., 1000.  )
 jeff3p3.fission = None
 jeff3p3.dilutions = None
 jeff3p3.pendf()
@@ -695,7 +695,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/90-Th-230g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 8.7040
-jeff3p3.eFiss = 201.775625
+jeff3p3.eFiss = 188.666101
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -709,13 +709,13 @@ jeff3p3.evaluationFile = evaluationDir + "../JEFF-3.1.2/JEFF312N/JEFF312N9040_0.
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.8699
-jeff3p3.eFiss = 201.465625
+jeff3p3.eFiss = 197.108389
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
 jeff3p3.draglib()
-jeff3p3.eFiss = 201.465625
+jeff3p3.eFiss = 197.108389
 jeff3p3.dilutions = ( 1.e10, 10000.0, 5957.50244, 3549.18335, 2114.42676, \
 1259.67004, 750.448669, 447.079956, 266.347961, 158.676849 )
 jeff3p3.pendf()
@@ -728,7 +728,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/90-Th-233g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (22.53556, 1.227732e5)
 jeff3p3.potential = 11.8699
-jeff3p3.eFiss = 1.7193E+02
+jeff3p3.eFiss = 185.840570
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -740,7 +740,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/91-Pa-231g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 8.7266
-jeff3p3.eFiss = 211.659375
+jeff3p3.eFiss = 194.099942
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -752,7 +752,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/91-Pa-233g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 9.9950
-jeff3p3.eFiss = 203.778750
+jeff3p3.eFiss = 194.162901
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -764,7 +764,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-232g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 12.0687
-jeff3p3.eFiss = 212.971250
+jeff3p3.eFiss = 193.044277
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -776,7 +776,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-233g.jeff33"
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 12.2989
-jeff3p3.eFiss = 200.445000
+jeff3p3.eFiss = 199.796183
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -788,7 +788,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-234g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.0210
-jeff3p3.eFiss = 204.058750
+jeff3p3.eFiss = 200.632850
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -800,7 +800,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-235g.jeff33"
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.6070
-jeff3p3.eFiss = 202.616875
+jeff3p3.eFiss = 202.270000
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
 jeff3p3.pendf()
@@ -818,7 +818,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-236g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.9954
-jeff3p3.eFiss = 206.261875
+jeff3p3.eFiss = 208.679081
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -830,7 +830,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-237g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.5000
-jeff3p3.eFiss = 210.407500
+jeff3p3.eFiss = 196.429642
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -842,7 +842,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/92-U-238g.jeff33"
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.17103
-jeff3p3.eFiss = 212.891250
+jeff3p3.eFiss = 209.540012
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
 jeff3p3.pendf()
@@ -859,7 +859,7 @@ jeff3p3.mat = 9343
 jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/93-Np-236g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
-jeff3p3.eFiss = 1.8E2
+jeff3p3.eFiss = 198.952718
 jeff3p3.potential = 12.1427
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
@@ -872,7 +872,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/93-Np-237g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.4369
-jeff3p3.eFiss = 210.878125
+jeff3p3.eFiss = 205.370480
 jeff3p3.branchingN2N = 0.801
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
@@ -885,7 +885,7 @@ jeff3p3.mat = 9349
 jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/93-Np-238g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
-jeff3p3.eFiss = 210.738125
+jeff3p3.eFiss = 208.699370
 jeff3p3.potential = 10.4000
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
@@ -898,7 +898,7 @@ jeff3p3.mat = 9352
 jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/93-Np-239g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
-jeff3p3.eFiss = 214.162500
+jeff3p3.eFiss = 198.519429
 jeff3p3.potential = 10.4979
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
@@ -910,7 +910,7 @@ jeff3p3.mat = 9428
 jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-236g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
-jeff3p3.eFiss = 209.020625
+jeff3p3.eFiss = 208.679081
 jeff3p3.potential = 11.2458
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
@@ -923,7 +923,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-237g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.5209
-jeff3p3.eFiss = 211.803125
+jeff3p3.eFiss = 210.593272
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -935,7 +935,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-238g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.8897
-jeff3p3.eFiss = 213.286250
+jeff3p3.eFiss = 209.540012
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
 jeff3p3.pendf()
@@ -953,7 +953,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-239g.jeff33"
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.8897
-jeff3p3.eFiss = 214.570000
+jeff3p3.eFiss = 208.018532
 jeff3p3.dilutions = ( 1.e10, 158.887822, 100.279413, 63.2896882, \
 39.9442369, 25.2101426, 15.9109633, 10.0419406, 6.33780423, 4.0 )
 jeff3p3.pendf()
@@ -971,7 +971,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-240g.jeff33"
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 9.9091
-jeff3p3.eFiss = 214.473125
+jeff3p3.eFiss = 208.612566
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
 jeff3p3.pendf()
@@ -989,7 +989,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-241g.jeff33"
 jeff3p3.fission = 2 # fission with delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.2156
-jeff3p3.eFiss = 217.141250
+jeff3p3.eFiss = 211.237715
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
 jeff3p3.pendf()
@@ -1007,7 +1007,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-242g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.6961
-jeff3p3.eFiss = 218.313750
+jeff3p3.eFiss = 212.072186
 jeff3p3.dilutions = ( 1.e10,  469.546659, 258.807233, 142.650752, \
 78.6270025, 43.3380508, 23.8872981, 13.1663284, 7.25708715, 4.0 )
 jeff3p3.pendf()
@@ -1025,7 +1025,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-243g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.2000
-jeff3p3.eFiss = 1.9E2
+jeff3p3.eFiss = 207.499380
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -1037,7 +1037,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/94-Pu-244g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.1000
-jeff3p3.eFiss = 209.729375
+jeff3p3.eFiss = 208.427244
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -1049,7 +1049,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/95-Am-241g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.0329
-jeff3p3.eFiss = 217.717500
+jeff3p3.eFiss = 211.216798
 jeff3p3.branchingNG = 0.115
 jeff3p3.dilutions = ( 1.e10, 94.5317612, 56.3173141, 33.5510521, 19.9880447, \
 11.9078817, 7.09412289, 4.22632504, 2.51783395, 1.5 )
@@ -1070,7 +1070,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/95-Am-242g.jeff33"
 jeff3p3.fission = 0 # no fission matrix!!!
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.2000
-jeff3p3.eFiss = 219.821250
+jeff3p3.eFiss = 215.146730
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -1082,7 +1082,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/95-Am-242m.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.2000
-jeff3p3.eFiss = 222.591875
+jeff3p3.eFiss = 215.145370
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1095,7 +1095,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/95-Am-243g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.8237
-jeff3p3.eFiss = 222.591875
+jeff3p3.eFiss = 212.952778
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3546.31, 1257.43, 445.8898, 158.1139, 56.0677, 19.8818, 7.0501, 2.5 )
 jeff3p3.pendf()
 jeff3p3.gendf()
@@ -1107,7 +1107,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-241g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.1788
-jeff3p3.eFiss = 219.925000
+jeff3p3.eFiss = 219.075406
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1120,7 +1120,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-242g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.2000
-jeff3p3.eFiss = 221.763125
+jeff3p3.eFiss = 212.786491
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1133,7 +1133,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-243g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.2832
-jeff3p3.eFiss =  218.849375
+jeff3p3.eFiss =  213.375296
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1146,7 +1146,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-244g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.3200
-jeff3p3.eFiss = 221.442500
+jeff3p3.eFiss = 217.926766
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1159,7 +1159,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-245g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.3900
-jeff3p3.eFiss = 215.662500
+jeff3p3.eFiss = 214.624022
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1172,7 +1172,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-246g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.2758
-jeff3p3.eFiss = 221.700625
+jeff3p3.eFiss = 220.179493
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1185,7 +1185,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-247g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.0000
-jeff3p3.eFiss = 219.811250
+jeff3p3.eFiss = 218.956599
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1198,7 +1198,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/96-Cm-248g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 10.3971
-jeff3p3.eFiss = 222.460000
+jeff3p3.eFiss = 221.723145
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1211,7 +1211,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/97-Bk-249g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.0983
-jeff3p3.eFiss = 225.349375
+jeff3p3.eFiss = 224.740691
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1224,7 +1224,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/98-Cf-249g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 11.1510
-jeff3p3.eFiss = 222.183750
+jeff3p3.eFiss = 221.434495
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1237,7 +1237,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/98-Cf-250g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 9.8800
-jeff3p3.eFiss = 230.083750
+jeff3p3.eFiss = 229.685291
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1250,7 +1250,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/98-Cf-251g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 9.8800
-jeff3p3.eFiss = 223.841875
+jeff3p3.eFiss = 223.166396
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1263,7 +1263,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/98-Cf-252g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 9.8000
-jeff3p3.eFiss = 230.615000
+jeff3p3.eFiss = 230.239896
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
@@ -1276,7 +1276,7 @@ jeff3p3.evaluationFile = evaluationDir + "JEFF33-n/98-Cf-253g.jeff33"
 jeff3p3.fission = 1 # fission without delayed neutrons
 jeff3p3.ss = (2.76792, 1.22773e5)
 jeff3p3.potential = 9.7600
-jeff3p3.eFiss = 1.9E2
+jeff3p3.eFiss = 231.148831
 jeff3p3.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
 158.676849, 56.3173141 )
 jeff3p3.pendf()
