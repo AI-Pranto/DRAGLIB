@@ -3,10 +3,10 @@ from PyNjoy import *
 import os
 
 endfb = PyNjoy()
-evaluationDir = os.getcwd() + "/ENDF/JEFF-3.3/"
-endfb.evaluationName = os.getcwd() + "/output/JEFF-3.3/"
+evaluationDir = os.getcwd() + "/jendl40-or-up_20160106/"
+endfb.evaluationName = os.getcwd() + "/output/JENDL-4.0"
 endfb.execDir = "PyNjoy2016/bld"
-endfb.nstr = 26
+endfb.nstr = 17
 endfb.iwt = 4
 endfb.Espectra = None
 endfb.autolib = (22.53556, 1.11377e4, 0.0005)
@@ -14,10 +14,10 @@ endfb.autolib = (22.53556, 1.11377e4, 0.0005)
 endfb.legendre = 3
 endfb.hmat = "H1_H2O"
 endfb.mat = 125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_001.endf"
-endfb.scatteringLaw =  evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-HinH2O.endf"
+endfb.evaluationFile = evaluationDir + "H001.dat"
+endfb.scatteringLaw =  evaluationDir + "tsl-HinH2O.dat"
 endfb.scatteringMat = 1
-endfb.temperatures = ( 294., 300., 400., 500., 550., 600., 650., 800. )
+endfb.temperatures = ( 296., 350., 400., 450., 500., 600., 800., 1000. )
 endfb.fission = None
 endfb.dilutions = None
 endfb.pendf()
@@ -27,10 +27,10 @@ endfb.draglib()
 endfb.legendre = 1
 endfb.hmat = "H2_D2O"
 endfb.mat = 128
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_002.endf"
-endfb.scatteringLaw = evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-DinD2O.endf"
+endfb.evaluationFile = evaluationDir + "H002.dat"
+endfb.scatteringLaw = evaluationDir + "tsl-DinD2O.dat"
 endfb.scatteringMat = 11
-endfb.temperatures = ( 293.6, 350.0, 400.0, 450.0, 500.0, 600.0 )
+endfb.temperatures = ( 296., 350., 400., 450., 500., 600., 800., 1000. )
 endfb.fission = None
 endfb.dilutions = None
 endfb.pendf()
@@ -39,10 +39,10 @@ endfb.draglib()
 
 endfb.hmat = "H1_CH2"
 endfb.mat = 125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_001.endf"
-endfb.scatteringLaw =  evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-HinCH2.endf"
+endfb.evaluationFile = evaluationDir + "H001.dat"
+endfb.scatteringLaw =  evaluationDir + "tsl-HinCH2.dat"
 endfb.scatteringMat = 37
-endfb.temperatures = ( 293.6,  350. )
+endfb.temperatures = ( 296., 350 )
 endfb.fission = None
 endfb.dilutions = None
 endfb.pendf()
@@ -51,9 +51,9 @@ endfb.draglib()
 
 endfb.hmat = "H1_ZRH"
 endfb.mat = 125
-endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200.)
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_001.endf"
-endfb.scatteringLaw = evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-HinZrH.endf"
+endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200. )
+endfb.evaluationFile = evaluationDir + "H001.dat"
+endfb.scatteringLaw = evaluationDir + "tsl-HinZrH.dat"
 endfb.scatteringMat = 7
 endfb.fission = None
 endfb.dilutions = None
@@ -63,9 +63,9 @@ endfb.draglib()
 
 endfb.hmat = "Zr90_ZRH"
 endfb.mat =  4025
-endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200.)
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_090.endf"
-endfb.scatteringLaw =  evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-ZrinZrH.endf"
+endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200. )
+endfb.evaluationFile = evaluationDir + "Zr090.dat"
+endfb.scatteringLaw =  evaluationDir + "tsl-ZrinZrH.dat"
 endfb.scatteringMat = 58
 endfb.fission = None
 endfb.dilutions = None
@@ -75,9 +75,9 @@ endfb.draglib()
 
 endfb.hmat = "C12_GR"
 endfb.mat = 625
-endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200., 1600., 2000.)
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-006_C_012.endf"
-endfb.scatteringLaw = evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-reactor-graphite-10P.endf"
+endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200., 1600., 2000. )
+endfb.evaluationFile = evaluationDir + "C000.dat"
+endfb.scatteringLaw = evaluationDir + "tsl-graphite.dat"
 endfb.scatteringMat = 31
 endfb.fission = None
 endfb.dilutions = None
@@ -87,9 +87,9 @@ endfb.draglib()
 
 endfb.hmat = "Be9"
 endfb.mat = 425
-endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200.)
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-004_Be_009.endf"
-endfb.scatteringLaw =  evaluationDir + "ENDF-B-VIII.0/thermal_scatt/tsl-Be-metal.endf"
+endfb.temperatures = ( 296., 400., 500., 600., 700., 800., 1000., 1200. )
+endfb.evaluationFile = evaluationDir + "Be009.dat"
+endfb.scatteringLaw =  evaluationDir + "tsl-Be-meta.dat"
 endfb.scatteringMat = 26
 endfb.fission = None
 endfb.dilutions = None
@@ -104,344 +104,329 @@ endfb.dilutions = None
 
 endfb.hmat = "H1"
 endfb.mat = 125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_001.endf"
+endfb.evaluationFile = evaluationDir + "H001.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "H2"
 endfb.mat = 128
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_002.endf"
-endfb.pendf()
-endfb.gendf()
-endfb.draglib()
-
-endfb.hmat = "H3"
-endfb.mat = 131
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-001_H_003.endf"
+endfb.evaluationFile = evaluationDir + "H002.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "He3"
 endfb.mat = 225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-002_He_003.endf"
+endfb.evaluationFile = evaluationDir + "He003.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "He4"
 endfb.mat = 228
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-002_He_004.endf"
+endfb.evaluationFile = evaluationDir + "He004.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Li6"
 endfb.mat = 325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-003_Li_006.endf"
+endfb.evaluationFile = evaluationDir + "Li006.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Li7"
 endfb.mat = 328
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-003_Li_007.endf"
+endfb.evaluationFile = evaluationDir + "Li007.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
-endfb.hmat = "Be7"
-endfb.mat = 419
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-004_Be_007.endf"
+endfb.hmat = "Be9"
+endfb.mat = 425
+endfb.evaluationFile = evaluationDir + "Be009.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "B10"
 endfb.mat = 525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-005_B_010.endf"
+endfb.evaluationFile = evaluationDir + "B010.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "B11"
 endfb.mat = 528
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-005_B_011.endf"
+endfb.evaluationFile = evaluationDir + "B011.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "C12"
 endfb.mat = 625
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-006_C_012.endf"
+endfb.evaluationFile = evaluationDir + "C000.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "N14"
 endfb.mat = 725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-007_N_014.endf"
+endfb.evaluationFile = evaluationDir + "N014.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "N15"
 endfb.mat = 728
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-007_N_015.endf"
+endfb.evaluationFile = evaluationDir + "N015.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "O16"
 endfb.mat = 825
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-008_O_016.endf"
-endfb.pendf()
-endfb.gendf()
-endfb.draglib()
-
-endfb.hmat = "O17"
-endfb.mat = 828
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-008_O_017.endf"
+endfb.evaluationFile = evaluationDir + "O016.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "F19"
 endfb.mat = 925
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-009_F_019.endf"
+endfb.evaluationFile = evaluationDir + "F019.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Na23"
 endfb.mat = 1125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-011_Na_023.endf"
+endfb.evaluationFile = evaluationDir + "Na023.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Mg24"
 endfb.mat = 1225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-012_Mg_024.endf"
+endfb.evaluationFile = evaluationDir + "Mg024.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Mg25"
 endfb.mat = 1228
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-012_Mg_025.endf"
+endfb.evaluationFile = evaluationDir + "Mg025.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Mg26"
 endfb.mat = 1231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-012_Mg_026.endf"
+endfb.evaluationFile = evaluationDir + "Mg026.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Al27"
 endfb.mat = 1325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-013_Al_027.endf"
+endfb.evaluationFile = evaluationDir + "Al027.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Si28"
 endfb.mat = 1425
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-014_Si_028.endf"
+endfb.evaluationFile = evaluationDir + "Si028.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Si29"
 endfb.mat = 1428
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-014_Si_029.endf"
+endfb.evaluationFile = evaluationDir + "Si029.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Si30"
 endfb.mat = 1431
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-014_Si_030.endf"
+endfb.evaluationFile = evaluationDir + "Si030.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "P31"
 endfb.mat = 1525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-015_P_031.endf"
+endfb.evaluationFile = evaluationDir + "P031.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "S32"
 endfb.mat = 1625
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-016_S_032.endf"
+endfb.evaluationFile = evaluationDir + "S032.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "S33"
 endfb.mat = 1628
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-016_S_033.endf"
+endfb.evaluationFile = evaluationDir + "S033.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "S34"
 endfb.mat = 1631
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-016_S_034.endf"
+endfb.evaluationFile = evaluationDir + "S034.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "S36"
 endfb.mat = 1637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-016_S_036.endf"
+endfb.evaluationFile = evaluationDir + "S036.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cl35"
 endfb.mat = 1725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-017_Cl_035.endf"
-# endfb.evaluationFile = "$HOME/evaluations/ENDFB7r0/n-ENDF-VII0.endf/n-017_Cl_035.endf"
+endfb.evaluationFile = evaluationDir + "Cl035.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cl37"
 endfb.mat = 1731
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-017_Cl_037.endf"
+endfb.evaluationFile = evaluationDir + "Cl037.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "K39"
 endfb.mat = 1925
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-019_K_039.endf"
+endfb.evaluationFile = evaluationDir + "K039.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "K40"
 endfb.mat = 1928
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-019_K_040.endf"
+endfb.evaluationFile = evaluationDir + "K040.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "K41"
 endfb.mat = 1931
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-019_K_041.endf"
+endfb.evaluationFile = evaluationDir + "K041.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ca40"
 endfb.mat = 2025
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-020_Ca_040.endf"
+endfb.evaluationFile = evaluationDir + "Ca040.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ca42"
 endfb.mat = 2031
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-020_Ca_042.endf"
+endfb.evaluationFile = evaluationDir + "Ca042.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ca43"
 endfb.mat = 2034
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-020_Ca_043.endf"
+endfb.evaluationFile = evaluationDir + "Ca043.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ca44"
 endfb.mat = 2037
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-020_Ca_044.endf"
+endfb.evaluationFile = evaluationDir + "Ca044.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ca46"
 endfb.mat = 2043
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-020_Ca_046.endf"
+endfb.evaluationFile = evaluationDir + "Ca046.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ca48"
 endfb.mat = 2049
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-020_Ca_048.endf"
+endfb.evaluationFile = evaluationDir + "Ca048.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ti46"
 endfb.mat = 2225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-022_Ti_046.endf"
+endfb.evaluationFile = evaluationDir + "Ti046.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ti47"
 endfb.mat = 2228
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-022_Ti_047.endf"
+endfb.evaluationFile = evaluationDir + "Ti047.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ti48"
 endfb.mat = 2231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-022_Ti_048.endf"
+endfb.evaluationFile = evaluationDir + "Ti048.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ti49"
 endfb.mat = 2234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-022_Ti_049.endf"
+endfb.evaluationFile = evaluationDir + "Ti049.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ti50"
 endfb.mat = 2237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-022_Ti_050.endf"
+endfb.evaluationFile = evaluationDir + "Ti050.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "V50"
 endfb.mat = 2325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-023_V_050.endf"
+endfb.evaluationFile = evaluationDir + "V050.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "V51"
 endfb.mat = 2328
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-023_V_051.endf"
+endfb.evaluationFile = evaluationDir + "V051.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cr50"
 endfb.mat = 2425
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-024_Cr_050.endf"
+endfb.evaluationFile = evaluationDir + "Cr050.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cr52"
 endfb.mat = 2431
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-024_Cr_052.endf"
+endfb.evaluationFile = evaluationDir + "Cr052.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 4.1677
@@ -453,35 +438,35 @@ endfb.dilutions = None
 
 endfb.hmat = "Cr53"
 endfb.mat = 2434
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-024_Cr_053.endf"
+endfb.evaluationFile = evaluationDir + "Cr053.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cr54"
 endfb.mat = 2437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-024_Cr_054.endf"
+endfb.evaluationFile = evaluationDir + "Cr054.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Mn55"
 endfb.mat = 2525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-025_Mn_055.endf"
+endfb.evaluationFile = evaluationDir + "Mn055.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Fe54"
 endfb.mat = 2625
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-026_Fe_054.endf"
+endfb.evaluationFile = evaluationDir + "Fe054.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Fe56"
 endfb.mat = 2631
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-026_Fe_056.endf"
+endfb.evaluationFile = evaluationDir + "Fe056.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 3.7243
@@ -493,189 +478,210 @@ endfb.dilutions = None
 
 endfb.hmat = "Fe57"
 endfb.mat = 2634
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-026_Fe_057.endf"
+endfb.evaluationFile = evaluationDir + "Fe057.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Fe58"
 endfb.mat = 2637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-026_Fe_058.endf"
+endfb.evaluationFile = evaluationDir + "Fe058.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Co59"
 endfb.mat = 2725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-027_Co_059.endf"
+endfb.evaluationFile = evaluationDir + "Co059.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ni58"
 endfb.mat = 2825
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-028_Ni_058.endf"
+endfb.evaluationFile = evaluationDir + "Ni058.dat"
+endfb.pendf()
+endfb.gendf()
+endfb.draglib()
+
+endfb.hmat = "Ni59"
+endfb.mat = 2828
+endfb.evaluationFile = evaluationDir + "Ni059.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ni60"
 endfb.mat = 2831
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-028_Ni_060.endf"
+endfb.evaluationFile = evaluationDir + "Ni060.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ni61"
 endfb.mat = 2834
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-028_Ni_061.endf"
+endfb.evaluationFile = evaluationDir + "Ni061.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ni62"
 endfb.mat = 2837
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-028_Ni_062.endf"
+endfb.evaluationFile = evaluationDir + "Ni062.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ni64"
 endfb.mat = 2843
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-028_Ni_064.endf"
+endfb.evaluationFile = evaluationDir + "Ni064.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cu63"
 endfb.mat = 2925
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-029_Cu_063.endf"
+endfb.evaluationFile = evaluationDir + "Cu063.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Cu65"
 endfb.mat = 2931
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-029_Cu_065.endf"
+endfb.evaluationFile = evaluationDir + "Cu065.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Zn64"
 endfb.mat = 3025
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-030_Zn_064.endf"
+endfb.evaluationFile = evaluationDir + "Zn064.dat"
+endfb.pendf()
+endfb.gendf()
+endfb.draglib()
+
+endfb.hmat = "Zn65"
+endfb.mat = 3028
+endfb.evaluationFile = evaluationDir + "Zn065.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Zn66"
 endfb.mat = 3031
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-030_Zn_066.endf"
+endfb.evaluationFile = evaluationDir + "Zn066.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Zn67"
 endfb.mat = 3034
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-030_Zn_067.endf"
+endfb.evaluationFile = evaluationDir + "Zn067.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Zn68"
 endfb.mat = 3037
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-030_Zn_068.endf"
+endfb.evaluationFile = evaluationDir + "Zn068.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Zn70"
 endfb.mat = 3043
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-030_Zn_070.endf"
+endfb.evaluationFile = evaluationDir + "Zn070.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ga69"
 endfb.mat = 3125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-031_Ga_069.endf"
+endfb.evaluationFile = evaluationDir + "Ga069.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Ga71"
 endfb.mat = 3131
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-031_Ga_071.endf"
+endfb.evaluationFile = evaluationDir + "Ga071.dat"
+endfb.pendf()
+endfb.gendf()
+endfb.draglib()
+
+endfb.hmat = "W180"
+endfb.mat =  7425
+endfb.evaluationFile = evaluationDir + "W180.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "W182"
 endfb.mat =  7431
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-074_W_182.endf"
+endfb.evaluationFile = evaluationDir + "W182.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "W183"
 endfb.mat = 7434
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-074_W_183.endf"
+endfb.evaluationFile = evaluationDir + "W183.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "W184"
 endfb.mat = 7437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-074_W_184.endf"
+endfb.evaluationFile = evaluationDir + "W184.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "W186"
 endfb.mat =  7443
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-074_W_186.endf"
+endfb.evaluationFile = evaluationDir + "W186.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Pb204"
 endfb.mat =  8225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-082_Pb_204.endf"
+endfb.evaluationFile = evaluationDir + "Pb204.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Pb206"
 endfb.mat =  8231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-082_Pb_206.endf"
+endfb.evaluationFile = evaluationDir + "Pb206.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Pb207"
 endfb.mat =  8234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-082_Pb_207.endf"
+endfb.evaluationFile = evaluationDir + "Pb207.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Pb208"
 endfb.mat =  8237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-082_Pb_208.endf"
+endfb.evaluationFile = evaluationDir + "Pb208.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Bi209"
 endfb.mat =  8325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-083_Bi_209.endf"
+endfb.evaluationFile = evaluationDir + "Bi209.dat"
 endfb.pendf()
 endfb.gendf()
 endfb.draglib()
 
 endfb.hmat = "Th230"
 endfb.mat = 9034
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-090_Th_230.endf"
+endfb.evaluationFile = evaluationDir + "Th230.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 8.7040
@@ -688,7 +694,7 @@ endfb.draglib()
 
 endfb.hmat = "Th232"
 endfb.mat = 9040
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-090_Th_232.endf"
+endfb.evaluationFile = evaluationDir + "Th232.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.8699
@@ -707,7 +713,7 @@ endfb.draglib()
 
 endfb.hmat = "Pa231"
 endfb.mat = 9131
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-091_Pa_231.endf"
+endfb.evaluationFile = evaluationDir + "Pa231.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 8.7266
@@ -720,7 +726,7 @@ endfb.draglib()
 
 endfb.hmat = "Pa233"
 endfb.mat = 9137
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-091_Pa_233.endf"
+endfb.evaluationFile = evaluationDir + "Pa233.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 9.9950
@@ -733,7 +739,7 @@ endfb.draglib()
 
 endfb.hmat = "U232"
 endfb.mat = 9219
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_232.endf"
+endfb.evaluationFile = evaluationDir + "U232.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 12.0687
@@ -746,7 +752,7 @@ endfb.draglib()
 
 endfb.hmat = "U233"
 endfb.mat = 9222
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_233.endf"
+endfb.evaluationFile = evaluationDir + "U233.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 12.2989
@@ -759,7 +765,7 @@ endfb.draglib()
 
 endfb.hmat = "U234"
 endfb.mat = 9225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_234.endf"
+endfb.evaluationFile = evaluationDir + "U234.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.0210
@@ -772,7 +778,7 @@ endfb.draglib()
 
 endfb.hmat = "U235"
 endfb.mat = 9228
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_235.endf"
+endfb.evaluationFile = evaluationDir + "U235.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.6070
@@ -790,7 +796,7 @@ endfb.draglib()
 
 endfb.hmat = "U236"
 endfb.mat = 9231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_236.endf"
+endfb.evaluationFile = evaluationDir + "U236.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.9954
@@ -803,7 +809,7 @@ endfb.draglib()
 
 endfb.hmat = "U237"
 endfb.mat = 9234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_237.endf"
+endfb.evaluationFile = evaluationDir + "U237.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.5000
@@ -816,7 +822,7 @@ endfb.draglib()
 
 endfb.hmat = "U238"
 endfb.mat = 9237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-092_U_238.endf"
+endfb.evaluationFile = evaluationDir + "U238.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.17103
@@ -834,7 +840,7 @@ endfb.draglib()
 
 endfb.hmat = "Np236"
 endfb.mat = 9343
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-093_Np_236.endf"
+endfb.evaluationFile = evaluationDir + "Np236.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.eFiss = 198.952718
@@ -847,7 +853,7 @@ endfb.draglib()
 
 endfb.hmat = "Np237"
 endfb.mat = 9346
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-093_Np_237.endf"
+endfb.evaluationFile = evaluationDir + "Np237.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.4369
@@ -862,7 +868,7 @@ endfb.branchingN2N = None
 
 endfb.hmat = "Np238"
 endfb.mat = 9349
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-093_Np_238.endf"
+endfb.evaluationFile = evaluationDir + "Np238.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.eFiss = 208.699370
@@ -875,7 +881,7 @@ endfb.draglib()
 
 endfb.hmat = "Np239"
 endfb.mat = 9352
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-093_Np_239.endf"
+endfb.evaluationFile = evaluationDir + "Np239.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.eFiss = 198.519429
@@ -888,7 +894,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu236"
 endfb.mat = 9428
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_236.endf"
+endfb.evaluationFile = evaluationDir + "Pu236.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.eFiss = 208.679081
@@ -901,7 +907,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu237"
 endfb.mat = 9431
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_237.endf"
+endfb.evaluationFile = evaluationDir + "Pu237.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.5209
@@ -914,7 +920,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu238"
 endfb.mat = 9434
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_238.endf"
+endfb.evaluationFile = evaluationDir + "Pu238.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.8897
@@ -932,7 +938,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu239"
 endfb.mat = 9437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_239.endf"
+endfb.evaluationFile = evaluationDir + "Pu239.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.8897
@@ -950,7 +956,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu240"
 endfb.mat = 9440
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_240.endf"
+endfb.evaluationFile = evaluationDir + "Pu240.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 9.9091
@@ -968,7 +974,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu241"
 endfb.mat = 9443
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_241.endf"
+endfb.evaluationFile = evaluationDir + "Pu241.dat"
 endfb.fission = 2 # fission with delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.2156
@@ -986,7 +992,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu242"
 endfb.mat = 9446
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_242.endf"
+endfb.evaluationFile = evaluationDir + "Pu242.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.6961
@@ -1004,7 +1010,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu243"
 endfb.mat = 9449
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_243.endf"
+endfb.evaluationFile = evaluationDir + "Pu243.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.2000
@@ -1017,7 +1023,7 @@ endfb.draglib()
 
 endfb.hmat = "Pu244"
 endfb.mat = 9452
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-094_Pu_244.endf"
+endfb.evaluationFile = evaluationDir + "Pu244.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.1000
@@ -1030,7 +1036,7 @@ endfb.draglib()
 
 endfb.hmat = "Am241"
 endfb.mat = 9543
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-095_Am_241.endf"
+endfb.evaluationFile = evaluationDir + "Am241.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.0329
@@ -1051,7 +1057,7 @@ endfb.branchingNG = None
 
 endfb.hmat = "Am242"
 endfb.mat = 9546
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-095_Am_242.endf"
+endfb.evaluationFile = evaluationDir + "Am242.dat"
 endfb.fission = 0 # no fission matrix!!!
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.2000
@@ -1064,7 +1070,7 @@ endfb.draglib()
 
 endfb.hmat = "Am242m"
 endfb.mat = 9547
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-095_Am_242m1.endf"
+endfb.evaluationFile = evaluationDir + "Am242m.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.2000
@@ -1077,7 +1083,7 @@ endfb.draglib()
 
 endfb.hmat = "Am243"
 endfb.mat = 9549
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-095_Am_243.endf"
+endfb.evaluationFile = evaluationDir + "Am243.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.8237
@@ -1090,7 +1096,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm241"
 endfb.mat = 9628
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_241.endf"
+endfb.evaluationFile = evaluationDir + "Cm241.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.1788
@@ -1103,7 +1109,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm242"
 endfb.mat = 9631
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_242.endf"
+endfb.evaluationFile = evaluationDir + "Cm242.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.2000
@@ -1116,7 +1122,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm243"
 endfb.mat = 9634
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_243.endf"
+endfb.evaluationFile = evaluationDir + "Cm243.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.2832
@@ -1129,7 +1135,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm244"
 endfb.mat = 9637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_244.endf"
+endfb.evaluationFile = evaluationDir + "Cm244.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.3200
@@ -1142,7 +1148,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm245"
 endfb.mat = 9640
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_245.endf"
+endfb.evaluationFile = evaluationDir + "Cm245.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.3900
@@ -1155,7 +1161,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm246"
 endfb.mat = 9643
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_246.endf"
+endfb.evaluationFile = evaluationDir + "Cm246.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.2758
@@ -1168,7 +1174,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm247"
 endfb.mat = 9646
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_247.endf"
+endfb.evaluationFile = evaluationDir + "Cm247.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.0000
@@ -1181,7 +1187,7 @@ endfb.draglib()
 
 endfb.hmat = "Cm248"
 endfb.mat = 9649
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-096_Cm_248.endf"
+endfb.evaluationFile = evaluationDir + "Cm248.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 10.3971
@@ -1194,7 +1200,7 @@ endfb.draglib()
 
 endfb.hmat = "Bk249"
 endfb.mat = 9752
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-097_Bk_249.endf"
+endfb.evaluationFile = evaluationDir + "Bk249.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.0983
@@ -1207,7 +1213,7 @@ endfb.draglib()
 
 endfb.hmat = "Cf249"
 endfb.mat = 9852
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-098_Cf_249.endf"
+endfb.evaluationFile = evaluationDir + "Cf249.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 11.1510
@@ -1220,7 +1226,7 @@ endfb.draglib()
 
 endfb.hmat = "Cf250"
 endfb.mat = 9855
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-098_Cf_250.endf"
+endfb.evaluationFile = evaluationDir + "Cf250.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 9.8800
@@ -1233,7 +1239,7 @@ endfb.draglib()
 
 endfb.hmat = "Cf251"
 endfb.mat = 9858
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-098_Cf_251.endf"
+endfb.evaluationFile = evaluationDir + "Cf251.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 9.8800
@@ -1246,7 +1252,7 @@ endfb.draglib()
 
 endfb.hmat = "Cf252"
 endfb.mat = 9861
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-098_Cf_252.endf"
+endfb.evaluationFile = evaluationDir + "Cf252.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 9.8000
@@ -1259,7 +1265,7 @@ endfb.draglib()
 
 endfb.hmat = "Cf253"
 endfb.mat = 9864
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-098_Cf_253.endf"
+endfb.evaluationFile = evaluationDir + "Cf253.dat"
 endfb.fission = 1 # fission without delayed neutrons
 endfb.ss = (22.53556, 3.206464e5)
 endfb.potential = 9.7600
@@ -1280,152 +1286,152 @@ endfb.eFiss = None
 
 endfb.hmat = "Ge72"
 endfb.mat = 3231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-032_Ge_072.endf"
+endfb.evaluationFile = evaluationDir + "Ge072.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ge73"
 endfb.mat = 3234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-032_Ge_073.endf"
+endfb.evaluationFile = evaluationDir + "Ge073.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ge74"
 endfb.mat = 3237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-032_Ge_074.endf"
+endfb.evaluationFile = evaluationDir + "Ge074.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ge76"
 endfb.mat = 3243
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-032_Ge_076.endf"
+endfb.evaluationFile = evaluationDir + "Ge076.dat"
 endfb.makeFp()
 
 endfb.hmat = "As75"
 endfb.mat = 3325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-033_As_075.endf"
+endfb.evaluationFile = evaluationDir + "As075.dat"
 endfb.makeFp()
 
 endfb.hmat = "Se76"
 endfb.mat = 3431
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-034_Se_076.endf"
+endfb.evaluationFile = evaluationDir + "Se076.dat"
 endfb.makeFp()
 
 endfb.hmat = "Se77"
 endfb.mat = 3434
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-034_Se_077.endf"
+endfb.evaluationFile = evaluationDir + "Se077.dat"
 endfb.makeFp()
 
 endfb.hmat = "Se78"
 endfb.mat = 3437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-034_Se_078.endf"
+endfb.evaluationFile = evaluationDir + "Se078.dat"
 endfb.makeFp()
 
 endfb.hmat = "Se79"
 endfb.mat = 3440
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-034_Se_079.endf"
+endfb.evaluationFile = evaluationDir + "Se079.dat"
 endfb.makeFp()
 
 endfb.hmat = "Se80"
 endfb.mat = 3443
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-034_Se_080.endf"
+endfb.evaluationFile = evaluationDir + "Se080.dat"
 endfb.makeFp()
 
 endfb.hmat = "Se82"
 endfb.mat = 3449
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-034_Se_082.endf"
+endfb.evaluationFile = evaluationDir + "Se082.dat"
 endfb.makeFp()
 
 endfb.hmat = "Br79"
 endfb.mat = 3525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-035_Br_079.endf"
+endfb.evaluationFile = evaluationDir + "Br079.dat"
 endfb.makeFp()
 
 endfb.hmat = "Br81"
 endfb.mat = 3531
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-035_Br_081.endf"
+endfb.evaluationFile = evaluationDir + "Br081.dat"
 endfb.makeFp()
 
 endfb.hmat = "Kr80"
 endfb.mat = 3631
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-036_Kr_080.endf"
+endfb.evaluationFile = evaluationDir + "Kr080.dat"
 endfb.makeFp()
 
 endfb.hmat = "Kr82"
 endfb.mat = 3637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-036_Kr_082.endf"
+endfb.evaluationFile = evaluationDir + "Kr082.dat"
 endfb.makeFp()
 
 endfb.hmat = "Kr83"
 endfb.mat = 3640
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-036_Kr_083.endf"
+endfb.evaluationFile = evaluationDir + "Kr083.dat"
 endfb.makeFp()
 
 endfb.hmat = "Kr84"
 endfb.mat = 3643
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-036_Kr_084.endf"
+endfb.evaluationFile = evaluationDir + "Kr084.dat"
 endfb.makeFp()
 
 endfb.hmat = "Kr85"
 endfb.mat = 3646
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-036_Kr_085.endf"
+endfb.evaluationFile = evaluationDir + "Kr085.dat"
 endfb.makeFp()
 
 endfb.hmat = "Kr86"
 endfb.mat = 3649
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-036_Kr_086.endf"
+endfb.evaluationFile = evaluationDir + "Kr086.dat"
 endfb.makeFp()
 
 endfb.hmat = "Rb85"
 endfb.mat = 3725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-037_Rb_085.endf"
+endfb.evaluationFile = evaluationDir + "Rb085.dat"
 endfb.makeFp()
 
 endfb.hmat = "Rb87"
 endfb.mat = 3731
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-037_Rb_087.endf"
+endfb.evaluationFile = evaluationDir + "Rb087.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sr86"
 endfb.mat = 3831
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-038_Sr_086.endf"
+endfb.evaluationFile = evaluationDir + "Sr086.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sr87"
 endfb.mat = 3834
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-038_Sr_087.endf"
+endfb.evaluationFile = evaluationDir + "Sr087.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sr88"
 endfb.mat = 3837
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-038_Sr_088.endf"
+endfb.evaluationFile = evaluationDir + "Sr088.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sr89"
 endfb.mat = 3840
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-038_Sr_089.endf"
+endfb.evaluationFile = evaluationDir + "Sr089.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sr90"
 endfb.mat = 3843
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-038_Sr_090.endf"
+endfb.evaluationFile = evaluationDir + "Sr090.dat"
 endfb.makeFp()
 
 endfb.hmat = "Y89"
 endfb.mat = 3925
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-039_Y_089.endf"
+endfb.evaluationFile = evaluationDir + "Y089.dat"
 endfb.makeFp()
 
 endfb.hmat = "Y90"
 endfb.mat = 3928
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-039_Y_090.endf"
+endfb.evaluationFile = evaluationDir + "Y090.dat"
 endfb.makeFp()
 
 endfb.hmat = "Y91"
 endfb.mat = 3931
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-039_Y_091.endf"
+endfb.evaluationFile = evaluationDir + "Y091.dat"
 endfb.makeFp()
 
 endfb.hmat = "Zr90"
 endfb.mat = 4025
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_090.endf"
+endfb.evaluationFile = evaluationDir + "Zr090.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.8813
@@ -1438,7 +1444,7 @@ endfb.autolib = (4.632489, 1.11377e4, 0.0005)
 
 endfb.hmat = "Zr91"
 endfb.mat = 4028
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_091.endf"
+endfb.evaluationFile = evaluationDir + "Zr091.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.8813
@@ -1450,7 +1456,7 @@ endfb.draglib()
 
 endfb.hmat = "Zr92"
 endfb.mat = 4031
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_092.endf"
+endfb.evaluationFile = evaluationDir + "Zr092.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.8813
@@ -1462,12 +1468,12 @@ endfb.draglib()
 
 endfb.hmat = "Zr93"
 endfb.mat = 4034
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_093.endf"
+endfb.evaluationFile = evaluationDir + "Zr093.dat"
 endfb.makeFp()
 
 endfb.hmat = "Zr94"
 endfb.mat = 4037
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_094.endf"
+endfb.evaluationFile = evaluationDir + "Zr094.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.8813
@@ -1479,12 +1485,12 @@ endfb.draglib()
 
 endfb.hmat = "Zr95"
 endfb.mat = 4040
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_095.endf"
+endfb.evaluationFile = evaluationDir + "Zr095.dat"
 endfb.makeFp()
 
 endfb.hmat = "Zr96"
 endfb.mat = 4043
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-040_Zr_096.endf"
+endfb.evaluationFile = evaluationDir + "Zr096.dat"
 endfb.fission = None
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.8813
@@ -1496,62 +1502,62 @@ endfb.draglib()
 
 endfb.hmat = "Nb93"
 endfb.mat = 4125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-041_Nb_093.endf"
+endfb.evaluationFile = evaluationDir + "Nb093.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nb94"
 endfb.mat = 4128
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-041_Nb_094.endf"
+endfb.evaluationFile = evaluationDir + "Nb094.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nb95"
 endfb.mat = 4131
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-041_Nb_095.endf"
+endfb.evaluationFile = evaluationDir + "Nb095.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo92"
 endfb.mat = 4225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_092.endf"
+endfb.evaluationFile = evaluationDir + "Mo092.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo94"
 endfb.mat = 4231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_094.endf"
+endfb.evaluationFile = evaluationDir + "Mo094.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo95"
 endfb.mat = 4234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_095.endf"
+endfb.evaluationFile = evaluationDir + "Mo095.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo96"
 endfb.mat = 4237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_096.endf"
+endfb.evaluationFile = evaluationDir + "Mo096.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo97"
 endfb.mat = 4240
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_097.endf"
+endfb.evaluationFile = evaluationDir + "Mo097.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo98"
 endfb.mat = 4243
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_098.endf"
+endfb.evaluationFile = evaluationDir + "Mo098.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo99"
 endfb.mat = 4246
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_099.endf"
+endfb.evaluationFile = evaluationDir + "Mo099.dat"
 endfb.makeFp()
 
 endfb.hmat = "Mo100"
 endfb.mat = 4249
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-042_Mo_100.endf"
+endfb.evaluationFile = evaluationDir + "Mo100.dat"
 endfb.makeFp()
 
 endfb.hmat = "Tc99"
 endfb.mat = 4325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-043_Tc_099.endf"
+endfb.evaluationFile = evaluationDir + "Tc099.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.4675
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -1562,87 +1568,87 @@ endfb.draglib()
 
 endfb.hmat = "Ru99"
 endfb.mat = 4434
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_099.endf"
+endfb.evaluationFile = evaluationDir + "Ru099.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru100"
 endfb.mat = 4437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_100.endf"
+endfb.evaluationFile = evaluationDir + "Ru100.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru101"
 endfb.mat = 4440
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_101.endf"
+endfb.evaluationFile = evaluationDir + "Ru101.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru102"
 endfb.mat = 4443
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_102.endf"
+endfb.evaluationFile = evaluationDir + "Ru102.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru103"
 endfb.mat = 4446
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_103.endf"
+endfb.evaluationFile = evaluationDir + "Ru103.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru104"
 endfb.mat = 4449
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_104.endf"
+endfb.evaluationFile = evaluationDir + "Ru104.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru105"
 endfb.mat = 4452
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_105.endf"
+endfb.evaluationFile = evaluationDir + "Ru105.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ru106"
 endfb.mat = 4455
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-044_Ru_106.endf"
+endfb.evaluationFile = evaluationDir + "Ru106.dat"
 endfb.makeFp()
 
 endfb.hmat = "Rh103"
 endfb.mat = 4525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-045_Rh_103.endf"
+endfb.evaluationFile = evaluationDir + "Rh103.dat"
 endfb.makeFp()
 
 endfb.hmat = "Rh105"
 endfb.mat = 4531
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-045_Rh_105.endf"
+endfb.evaluationFile = evaluationDir + "Rh105.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pd104"
 endfb.mat = 4631
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-046_Pd_104.endf"
+endfb.evaluationFile = evaluationDir + "Pd104.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pd105"
 endfb.mat = 4634
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-046_Pd_105.endf"
+endfb.evaluationFile = evaluationDir + "Pd105.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pd106"
 endfb.mat = 4637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-046_Pd_106.endf"
+endfb.evaluationFile = evaluationDir + "Pd106.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pd107"
 endfb.mat = 4640
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-046_Pd_107.endf"
+endfb.evaluationFile = evaluationDir + "Pd107.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pd108"
 endfb.mat = 4643
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-046_Pd_108.endf"
+endfb.evaluationFile = evaluationDir + "Pd108.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pd110"
 endfb.mat = 4649
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-046_Pd_110.endf"
+endfb.evaluationFile = evaluationDir + "Pd110.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ag107"
 endfb.mat = 4725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-047_Ag_107.endf"
+endfb.evaluationFile = evaluationDir + "Ag107.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 5.4739
 endfb.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
@@ -1653,7 +1659,7 @@ endfb.draglib()
 
 endfb.hmat = "Ag109"
 endfb.mat = 4731
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-047_Ag_109.endf"
+endfb.evaluationFile = evaluationDir + "Ag109.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 5.3316
 endfb.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
@@ -1664,22 +1670,22 @@ endfb.draglib()
 
 endfb.hmat = "Ag111"
 endfb.mat = 4737
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-047_Ag_111.endf"
+endfb.evaluationFile = evaluationDir + "Ag111.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cd106"
 endfb.mat = 4825
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_106.endf"
+endfb.evaluationFile = evaluationDir + "Cd106.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cd108"
 endfb.mat = 4831
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_108.endf"
+endfb.evaluationFile = evaluationDir + "Cd108.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cd110"
 endfb.mat = 4837
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_110.endf"
+endfb.evaluationFile = evaluationDir + "Cd110.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 5.1762
 endfb.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
@@ -1690,44 +1696,39 @@ endfb.draglib()
 
 endfb.hmat = "Cd111"
 endfb.mat = 4840
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_111.endf"
+endfb.evaluationFile = evaluationDir + "Cd111.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cd112"
 endfb.mat = 4843
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_112.endf"
+endfb.evaluationFile = evaluationDir + "Cd112.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cd113"
 endfb.mat = 4846
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_113.endf"
+endfb.evaluationFile = evaluationDir + "Cd113.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cd114"
 endfb.mat = 4849
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_114.endf"
+endfb.evaluationFile = evaluationDir + "Cd114.dat"
 endfb.branchingNG = 0.079383
 endfb.makeFp()
 endfb.branchingNG = None
 
-endfb.hmat = "Cd115m"
-endfb.mat = 4853
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_115m1.endf"
-endfb.makeFp()
-
 endfb.hmat = "Cd116"
 endfb.mat = 4855
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-048_Cd_116.endf"
+endfb.evaluationFile = evaluationDir + "Cd116.dat"
 endfb.makeFp()
 
 endfb.hmat = "In113"
 endfb.mat = 4925
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-049_In_113.endf"
+endfb.evaluationFile = evaluationDir + "In113.dat"
 endfb.makeFp()
 
 endfb.hmat = "In115"
 endfb.mat = 4931
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-049_In_115.endf"
+endfb.evaluationFile = evaluationDir + "In115.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 5.0439
 endfb.dilutions = ( 1.e10, 10000.0, 3549.18335, 1259.67004, 447.079956, \
@@ -1738,151 +1739,151 @@ endfb.draglib()
 
 endfb.hmat = "Sn112"
 endfb.mat = 5025
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_112.endf"
+endfb.evaluationFile = evaluationDir + "Sn112.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn114"
 endfb.mat = 5031
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_114.endf"
+endfb.evaluationFile = evaluationDir + "Sn114.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn115"
 endfb.mat = 5034
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_115.endf"
+endfb.evaluationFile = evaluationDir + "Sn115.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn116"
 endfb.mat = 5037
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_116.endf"
+endfb.evaluationFile = evaluationDir + "Sn116.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn117"
 endfb.mat = 5040
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_117.endf"
+endfb.evaluationFile = evaluationDir + "Sn117.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn118"
 endfb.mat = 5043
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_118.endf"
+endfb.evaluationFile = evaluationDir + "Sn118.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn119"
 endfb.mat = 5046
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_119.endf"
+endfb.evaluationFile = evaluationDir + "Sn119.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn120"
 endfb.mat = 5049
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_120.endf"
+endfb.evaluationFile = evaluationDir + "Sn120.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn122"
 endfb.mat = 5055
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_122.endf"
+endfb.evaluationFile = evaluationDir + "Sn122.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn123"
 endfb.mat = 5058
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_123.endf"
+endfb.evaluationFile = evaluationDir + "Sn123.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn124"
 endfb.mat = 5061
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_124.endf"
-endfb.makeFp()
-
-endfb.hmat = "Sn125"
-endfb.mat = 5064
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_125.endf"
+endfb.evaluationFile = evaluationDir + "Sn124.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sn126"
 endfb.mat = 5067
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-050_Sn_126.endf"
+endfb.evaluationFile = evaluationDir + "Sn126.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sb121"
 endfb.mat = 5125
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-051_Sb_121.endf"
+endfb.evaluationFile = evaluationDir + "Sb121.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sb123"
 endfb.mat = 5131
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-051_Sb_123.endf"
+endfb.evaluationFile = evaluationDir + "Sb123.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sb124"
 endfb.mat = 5134
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-051_Sb_124.endf"
+endfb.evaluationFile = evaluationDir + "Sb124.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sb125"
 endfb.mat = 5137
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-051_Sb_125.endf"
+endfb.evaluationFile = evaluationDir + "Sb125.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sb126"
 endfb.mat = 5140
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-051_Sb_126.endf"
+endfb.evaluationFile = evaluationDir + "Sb126.dat"
+endfb.makeFp()
+
+endfb.hmat = "Te120"
+endfb.mat = 5225
+endfb.evaluationFile = evaluationDir + "Te120.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te122"
 endfb.mat = 5231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_122.endf"
+endfb.evaluationFile = evaluationDir + "Te122.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te123"
 endfb.mat = 5234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_123.endf"
+endfb.evaluationFile = evaluationDir + "Te123.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te124"
 endfb.mat = 5237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_124.endf"
+endfb.evaluationFile = evaluationDir + "Te124.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te125"
 endfb.mat = 5240
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_125.endf"
+endfb.evaluationFile = evaluationDir + "Te125.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te126"
 endfb.mat = 5243
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_126.endf"
+endfb.evaluationFile = evaluationDir + "Te126.dat"
 endfb.branchingNG = 0.091528
 endfb.makeFp()
 endfb.branchingNG = None
 
 endfb.hmat = "Te127m"
 endfb.mat = 5247
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_127m1.endf"
+endfb.evaluationFile = evaluationDir + "Te127m.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te128"
 endfb.mat = 5249
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_128.endf"
+endfb.evaluationFile = evaluationDir + "Te128.dat"
 endfb.branchingNG = 0.031894
 endfb.makeFp()
 endfb.branchingNG = None
 
 endfb.hmat = "Te129m"
 endfb.mat = 5253
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_129m1.endf"
+endfb.evaluationFile = evaluationDir + "Te129m.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te130"
 endfb.mat = 5255
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_130.endf"
+endfb.evaluationFile = evaluationDir + "Te130.dat"
 endfb.makeFp()
 
 endfb.hmat = "Te132"
 endfb.mat = 5261
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-052_Te_132.endf"
+endfb.evaluationFile = evaluationDir + "Te132.dat"
 endfb.makeFp()
 
 endfb.hmat = "I127"
 endfb.mat = 5325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-053_I_127.endf"
+endfb.evaluationFile = evaluationDir + "I127.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 4.5239
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -1893,7 +1894,7 @@ endfb.draglib()
 
 endfb.hmat = "I129"
 endfb.mat = 5331
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-053_I_129.endf"
+endfb.evaluationFile = evaluationDir + "I129.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 5.8221
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -1904,319 +1905,319 @@ endfb.draglib()
 
 endfb.hmat = "I130"
 endfb.mat = 5334
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-053_I_130.endf"
+endfb.evaluationFile = evaluationDir + "I130.dat"
 endfb.makeFp()
 
 endfb.hmat = "I131"
 endfb.mat = 5337
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-053_I_131.endf"
+endfb.evaluationFile = evaluationDir + "I131.dat"
 endfb.makeFp()
 
 endfb.hmat = "I135"
 endfb.mat = 5349
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-053_I_135.endf"
+endfb.evaluationFile = evaluationDir + "I135.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe128"
 endfb.mat = 5437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_128.endf"
+endfb.evaluationFile = evaluationDir + "Xe128.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe129"
 endfb.mat = 5440
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_129.endf"
+endfb.evaluationFile = evaluationDir + "Xe129.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe130"
 endfb.mat = 5443
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_130.endf"
+endfb.evaluationFile = evaluationDir + "Xe130.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe131"
 endfb.mat = 5446
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_131.endf"
+endfb.evaluationFile = evaluationDir + "Xe131.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe132"
 endfb.mat = 5449
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_132.endf"
+endfb.evaluationFile = evaluationDir + "Xe132.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe133"
 endfb.mat = 5452
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_133.endf"
+endfb.evaluationFile = evaluationDir + "Xe133.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe134"
 endfb.mat = 5455
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_134.endf"
+endfb.evaluationFile = evaluationDir + "Xe134.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe135"
 endfb.mat = 5458
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_135.endf"
+endfb.evaluationFile = evaluationDir + "Xe135.dat"
 endfb.makeFp()
 
 endfb.hmat = "Xe136"
 endfb.mat = 5461
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-054_Xe_136.endf"
+endfb.evaluationFile = evaluationDir + "Xe136.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cs133"
 endfb.mat = 5525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-055_Cs_133.endf"
+endfb.evaluationFile = evaluationDir + "Cs133.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cs134"
 endfb.mat = 5528
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-055_Cs_134.endf"
+endfb.evaluationFile = evaluationDir + "Cs134.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cs135"
 endfb.mat = 5531
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-055_Cs_135.endf"
+endfb.evaluationFile = evaluationDir + "Cs135.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cs136"
 endfb.mat = 5534
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-055_Cs_136.endf"
+endfb.evaluationFile = evaluationDir + "Cs136.dat"
 endfb.makeFp()
 
 endfb.hmat = "Cs137"
 endfb.mat = 5537
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-055_Cs_137.endf"
+endfb.evaluationFile = evaluationDir + "Cs137.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ba134"
 endfb.mat = 5637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-056_Ba_134.endf"
+endfb.evaluationFile = evaluationDir + "Ba134.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ba135"
 endfb.mat = 5640
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-056_Ba_135.endf"
+endfb.evaluationFile = evaluationDir + "Ba135.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ba136"
 endfb.mat = 5643
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-056_Ba_136.endf"
+endfb.evaluationFile = evaluationDir + "Ba136.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ba137"
 endfb.mat = 5646
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-056_Ba_137.endf"
+endfb.evaluationFile = evaluationDir + "Ba137.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ba138"
 endfb.mat = 5649
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-056_Ba_138.endf"
+endfb.evaluationFile = evaluationDir + "Ba138.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ba140"
 endfb.mat = 5655
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-056_Ba_140.endf"
+endfb.evaluationFile = evaluationDir + "Ba140.dat"
 endfb.makeFp()
 
 endfb.hmat = "La138"
 endfb.mat = 5725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-057_La_138.endf"
+endfb.evaluationFile = evaluationDir + "La138.dat"
 endfb.makeFp()
 
 endfb.hmat = "La139"
 endfb.mat = 5728
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-057_La_139.endf"
+endfb.evaluationFile = evaluationDir + "La139.dat"
 endfb.makeFp()
 
 endfb.hmat = "La140"
 endfb.mat = 5731
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-057_La_140.endf"
+endfb.evaluationFile = evaluationDir + "La140.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ce140"
 endfb.mat = 5837
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-058_Ce_140.endf"
+endfb.evaluationFile = evaluationDir + "Ce140.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ce141"
 endfb.mat = 5840
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-058_Ce_141.endf"
+endfb.evaluationFile = evaluationDir + "Ce141.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ce142"
 endfb.mat = 5843
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-058_Ce_142.endf"
+endfb.evaluationFile = evaluationDir + "Ce142.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ce143"
 endfb.mat = 5846
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-058_Ce_143.endf"
+endfb.evaluationFile = evaluationDir + "Ce143.dat"
 endfb.makeFp()
 
 endfb.hmat = "Ce144"
 endfb.mat = 5849
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-058_Ce_144.endf"
+endfb.evaluationFile = evaluationDir + "Ce144.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pr141"
 endfb.mat = 5925
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-059_Pr_141.endf"
+endfb.evaluationFile = evaluationDir + "Pr141.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pr142"
 endfb.mat = 5928
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-059_Pr_142.endf"
+endfb.evaluationFile = evaluationDir + "Pr142.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pr143"
 endfb.mat = 5931
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-059_Pr_143.endf"
+endfb.evaluationFile = evaluationDir + "Pr143.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd142"
 endfb.mat = 6025
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_142.endf"
+endfb.evaluationFile = evaluationDir + "Nd142.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd143"
 endfb.mat = 6028
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_143.endf"
+endfb.evaluationFile = evaluationDir + "Nd143.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd144"
 endfb.mat = 6031
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_144.endf"
+endfb.evaluationFile = evaluationDir + "Nd144.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd145"
 endfb.mat = 6034
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_145.endf"
+endfb.evaluationFile = evaluationDir + "Nd145.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd146"
 endfb.mat = 6037
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_146.endf"
+endfb.evaluationFile = evaluationDir + "Nd146.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd147"
 endfb.mat = 6040
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_147.endf"
+endfb.evaluationFile = evaluationDir + "Nd147.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd148"
 endfb.mat = 6043
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_148.endf"
+endfb.evaluationFile = evaluationDir + "Nd148.dat"
 endfb.makeFp()
 
 endfb.hmat = "Nd150"
 endfb.mat = 6049
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-060_Nd_150.endf"
+endfb.evaluationFile = evaluationDir + "Nd150.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pm147"
 endfb.mat = 6149
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-061_Pm_147.endf"
+endfb.evaluationFile = evaluationDir + "Pm147.dat"
 endfb.branchingNG = 0.470
 endfb.makeFp()
 endfb.branchingNG = None
 
 endfb.hmat = "Pm148"
 endfb.mat = 6152
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-061_Pm_148.endf"
+endfb.evaluationFile = evaluationDir + "Pm148.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pm148m"
 endfb.mat = 6153
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-061_Pm_148m1.endf"
+endfb.evaluationFile = evaluationDir + "Pm148m.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pm149"
 endfb.mat = 6155
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-061_Pm_149.endf"
+endfb.evaluationFile = evaluationDir + "Pm149.dat"
 endfb.makeFp()
 
 endfb.hmat = "Pm151"
 endfb.mat = 6161
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-061_Pm_151.endf"
+endfb.evaluationFile = evaluationDir + "Pm151.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm147"
 endfb.mat = 6234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_147.endf"
+endfb.evaluationFile = evaluationDir + "Sm147.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm148"
 endfb.mat = 6237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_148.endf"
+endfb.evaluationFile = evaluationDir + "Sm148.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm149"
 endfb.mat = 6240
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_149.endf"
+endfb.evaluationFile = evaluationDir + "Sm149.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm150"
 endfb.mat = 6243
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_150.endf"
+endfb.evaluationFile = evaluationDir + "Sm150.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm151"
 endfb.mat = 6246
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_151.endf"
+endfb.evaluationFile = evaluationDir + "Sm151.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm152"
 endfb.mat = 6249
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_152.endf"
+endfb.evaluationFile = evaluationDir + "Sm152.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm153"
 endfb.mat = 6252
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_153.endf"
+endfb.evaluationFile = evaluationDir + "Sm153.dat"
 endfb.makeFp()
 
 endfb.hmat = "Sm154"
 endfb.mat = 6255
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-062_Sm_154.endf"
+endfb.evaluationFile = evaluationDir + "Sm154.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu151"
 endfb.mat = 6325
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-063_Eu_151.endf"
+endfb.evaluationFile = evaluationDir + "Eu151.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu152"
 endfb.mat = 6328
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-063_Eu_152.endf"
+endfb.evaluationFile = evaluationDir + "Eu152.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu153"
 endfb.mat = 6331
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-063_Eu_153.endf"
+endfb.evaluationFile = evaluationDir + "Eu153.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu154"
 endfb.mat = 6334
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-063_Eu_154.endf"
+endfb.evaluationFile = evaluationDir + "Eu154.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu155"
 endfb.mat = 6337
-endfb.evaluationFile = evaluationDir + "/ENDF-B-VIII.0/neutrons/n-063_Eu_155.endf"
+endfb.evaluationFile = evaluationDir + "Eu155.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu156"
 endfb.mat = 6340
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-063_Eu_156.endf"
+endfb.evaluationFile = evaluationDir + "Eu156.dat"
 endfb.makeFp()
 
 endfb.hmat = "Eu157"
 endfb.mat = 6343
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-063_Eu_157.endf"
+endfb.evaluationFile = evaluationDir + "Eu157.dat"
 endfb.makeFp()
 
 endfb.hmat = "Gd152"
 endfb.mat = 6425
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_152.endf"
+endfb.evaluationFile = evaluationDir + "Gd152.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 8.0425
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2227,7 +2228,7 @@ endfb.draglib()
 
 endfb.hmat = "Gd154"
 endfb.mat = 6431
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_154.endf"
+endfb.evaluationFile = evaluationDir + "Gd154.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.6723
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2238,7 +2239,7 @@ endfb.draglib()
 
 endfb.hmat = "Gd155"
 endfb.mat = 6434
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_155.endf"
+endfb.evaluationFile = evaluationDir + "Gd155.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.3376
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2249,7 +2250,7 @@ endfb.draglib()
 
 endfb.hmat = "Gd156"
 endfb.mat = 6437
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_156.endf"
+endfb.evaluationFile = evaluationDir + "Gd156.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.3792
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2260,7 +2261,7 @@ endfb.draglib()
 
 endfb.hmat = "Gd157"
 endfb.mat = 6440
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_157.endf"
+endfb.evaluationFile = evaluationDir + "Gd157.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.6063
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2271,7 +2272,7 @@ endfb.draglib()
 
 endfb.hmat = "Gd158"
 endfb.mat = 6443
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_158.endf"
+endfb.evaluationFile = evaluationDir + "Gd158.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.6454
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2282,7 +2283,7 @@ endfb.draglib()
 
 endfb.hmat = "Gd160"
 endfb.mat = 6449
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-064_Gd_160.endf"
+endfb.evaluationFile = evaluationDir + "Gd160.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.0241
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2295,17 +2296,17 @@ endfb.dilutions = None
 
 endfb.hmat = "Tb159"
 endfb.mat = 6525
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-065_Tb_159.endf"
+endfb.evaluationFile = evaluationDir + "Tb159.dat"
 endfb.makeFp()
 
 endfb.hmat = "Tb160"
 endfb.mat = 6528
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-065_Tb_160.endf"
+endfb.evaluationFile = evaluationDir + "Tb160.dat"
 endfb.makeFp()
 
 endfb.hmat = "Dy160"
 endfb.mat = 6637
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-066_Dy_160.endf"
+endfb.evaluationFile = evaluationDir + "Dy160.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 6.9861
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2316,7 +2317,7 @@ endfb.draglib()
 
 endfb.hmat = "Dy161"
 endfb.mat = 6640
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-066_Dy_161.endf"
+endfb.evaluationFile = evaluationDir + "Dy161.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.0121
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2327,7 +2328,7 @@ endfb.draglib()
 
 endfb.hmat = "Dy162"
 endfb.mat = 6643
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-066_Dy_162.endf"
+endfb.evaluationFile = evaluationDir + "Dy162.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 4.5681
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2338,7 +2339,7 @@ endfb.draglib()
 
 endfb.hmat = "Dy163"
 endfb.mat = 6646
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-066_Dy_163.endf"
+endfb.evaluationFile = evaluationDir + "Dy163.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.0639
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2349,7 +2350,7 @@ endfb.draglib()
 
 endfb.hmat = "Dy164"
 endfb.mat = 6649
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-066_Dy_164.endf"
+endfb.evaluationFile = evaluationDir + "Dy164.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.0897
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2360,7 +2361,7 @@ endfb.draglib()
 
 endfb.hmat = "Hf174"
 endfb.mat = 7225
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-072_Hf_174.endf"
+endfb.evaluationFile = evaluationDir + "Hf174.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.1385
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2371,7 +2372,7 @@ endfb.draglib()
 
 endfb.hmat = "Hf176"
 endfb.mat = 7231
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-072_Hf_176.endf"
+endfb.evaluationFile = evaluationDir + "Hf176.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.1935
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2382,7 +2383,7 @@ endfb.draglib()
 
 endfb.hmat = "Hf177"
 endfb.mat = 7234
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-072_Hf_177.endf"
+endfb.evaluationFile = evaluationDir + "Hf177.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.2202
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2393,7 +2394,7 @@ endfb.draglib()
 
 endfb.hmat = "Hf178"
 endfb.mat = 7237
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-072_Hf_178.endf"
+endfb.evaluationFile = evaluationDir + "Hf178.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.2469
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2404,7 +2405,7 @@ endfb.draglib()
 
 endfb.hmat = "Hf179"
 endfb.mat = 7240
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-072_Hf_179.endf"
+endfb.evaluationFile = evaluationDir + "Hf179.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.2736
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2415,7 +2416,7 @@ endfb.draglib()
 
 endfb.hmat = "Hf180"
 endfb.mat = 7243
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-072_Hf_180.endf"
+endfb.evaluationFile = evaluationDir + "Hf180.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.3004
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2426,7 +2427,7 @@ endfb.draglib()
 
 endfb.hmat = "Ta181"
 endfb.mat = 7328
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-073_Ta_181.endf"
+endfb.evaluationFile = evaluationDir + "Ta181.dat"
 endfb.ss = (22.53556, 1.858471e4)
 endfb.potential = 7.6454
 endfb.dilutions = ( 1.e10, 10000.0, 4216.96552, 1778.27959, 749.894278, \
@@ -2439,21 +2440,21 @@ endfb.dilutions = None
 
 endfb.hmat = "Ho165"
 endfb.mat = 6725
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-067_Ho_165.endf"
+endfb.evaluationFile = evaluationDir + "Ho165.dat"
 endfb.makeFp()
 
 endfb.hmat = "Er166"
 endfb.mat = 6837
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-068_Er_166.endf"
+endfb.evaluationFile = evaluationDir + "Er166.dat"
 endfb.makeFp()
 
 endfb.hmat = "Er167"
 endfb.mat = 6840
-endfb.evaluationFile = evaluationDir + "ENDF-B-VIII.0/neutrons/n-068_Er_167.endf"
+endfb.evaluationFile = evaluationDir + "Er167.dat"
 endfb.makeFp()
 
 # Process the burnup chain:
 
-endfb.fissionFile = evaluationDir + "ENDF-B-VIII.0/nfy/"
-endfb.decayFile =   evaluationDir + "ENDF-B-VIII.0/decay/"
+endfb.fissionFile = evaluationDir.joinpath('jendl40-or-up-fy_20120914').rglob('*NF.dat')
+endfb.decayFile =   evaluationDir.joinpath('JENDL-4-PA').rglob('*.dat')
 endfb.burnup()

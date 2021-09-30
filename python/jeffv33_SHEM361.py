@@ -85,7 +85,7 @@ jeff3p3.gendf()
 jeff3p3.draglib()
 
 jeff3p3.scatteringLaw = None
-jeff3p3.temperatures = ( 293., 550., 900., 1200., 2000. )
+jeff3p3.temperatures = ( 293., 600., 900., 1500., 3000. )
 jeff3p3.fission = None
 jeff3p3.dilutions = None
 
